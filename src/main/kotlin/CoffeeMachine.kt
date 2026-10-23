@@ -59,7 +59,7 @@ object CoffeeMachine {
         println("¿Quieres el café descafeinado? (true / false) ")
     }
 
-    fun seleccionarDescafeinado(quiere: Boolean) {
+    fun seleccionarDescafeinado (quiere: Boolean) {
         if (estadoActual != CoffeeMachineState.Descafeinado) {
             println("No se puede elegir descafeinado ahora. Estado actual: $estadoActual")
             return
@@ -71,7 +71,7 @@ object CoffeeMachine {
         println("¿Que tipo de cafe quieres? (con leche, americano o solo)")
     }
 
-    fun seleccionarTipo(tipoElegido: TipoCafe) {
+    fun seleccionarTipo (tipoElegido: TipoCafe) {
         if (estadoActual != CoffeeMachineState.Tipo) {
             println("No se puede elegir el tipo ahora. Estado actual: $estadoActual")
             return
